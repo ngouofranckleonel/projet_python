@@ -1,0 +1,15 @@
+
+{% extends 'main.html' %} 
+{% load static %}
+{% block conten %}
+
+<h2>Se connecter en tant que</h2><br/>
+<ul id="connecter">
+    <li>
+        <a class="nav-link btn btn-warning ml-5"  href=" {% url 'login' %}">CLIENT</a>
+    </li><br/>
+    <li class="nav-item active">
+        <a class="nav-link btn btn-success ml-5"  href=" {% url 'compte_resto' %}">RESTAURATEUR</a>
+    </li>
+</ul>
+{% endblock %}
